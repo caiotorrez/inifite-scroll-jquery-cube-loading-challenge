@@ -7,15 +7,40 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Modak|Pacifico&display=swap" rel="stylesheet">
     <script src='main.js'></script>
 </head>
 <body>
-    
-    <div class="cube-loading">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    <main>
+        <section class="container">
+            <h1>Título</h1>
+            <div class="container-cards">
+                <div class="card">
+                    <figure class="card-avatar">
+                        <img src="https://uinames.com/api/photos/male/1.jpg" alt="" />
+                    </figure>
+                    <div class="card-body">
+                        <div class="card-info">
+                            <span><i class="material-icons"> person </i></span>
+                            <span id="gender"></span>
+                        </div>
+                        <div class="card-info">
+                            <span><i class="material-icons"> public </i></span>
+                            <span id="region"></span>
+                        </div>
+                        <div class="card-info">
+                            <span><i class="material-icons"> cake </i></span>
+                            <span id="birthday"></span>
+                        </div>
+                        <div class="card-info">
+                            <span><i class="material-icons"> email </i></span>
+                            <span id="email"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
