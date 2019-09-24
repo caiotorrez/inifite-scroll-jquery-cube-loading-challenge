@@ -24,9 +24,6 @@ const stopLoading = () => {
     // remove loading from html
 }
 
-const getAnything = async () => {
-    // get anything data with ajax and append in html
-}
 
 function callApi() {
     $.get('http://uinames.com/api/?amount=12&&ext', function(data) {

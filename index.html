@@ -8,39 +8,79 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Modak|Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Pacifico|Roboto&display=swap" rel="stylesheet">
     <script src='main.js'></script>
 </head>
 <body>
+    
+    <h1>People Generator!</h1>
+
+    <section class="filter">
+        <header id="filter" aria-haspopup="listbox" aria-labelledby="filter">
+            <i class="material-icons">filter_list</i>
+            <h3>Filtro</h3>
+        </header>
+        <ul id="filter-list" class="filter-list" tabindex="-1" role="listbox" aria-laballedby="filter">
+            <li role="option">
+                <span id="gender-button" aria-haspopup="listbox" aria-labelledby="filter-list gender-button" tabindex="0" role="button" aria-pressed="false" aria-expanded="true">
+                    Gender
+                </span>
+                <ul id="gender-list" class="gender-list" tabindex="-1" role="listbox" aria-laballedby="filter-list">
+                    <li role="option">Male</li>
+                    <li role="option">Female</li>
+                </ul>
+            </li>
+            
+            <li role="option">
+                <span id="gender-button" aria-haspopup="listbox" aria-labelledby="filter-list gender-button" tabindex="0" role="button" aria-pressed="false" aria-expanded="true">
+                    Countries
+                </span>
+                <ul id="gender-list" class="gender-list" tabindex="-1" role="listbox" aria-laballedby="filter-list">
+                    <li role="option">Male</li>
+                    <li role="option">Female</li>
+                </ul>
+            </li>
+            
+            <li role="option">
+                <span id="gender-button" aria-haspopup="listbox" aria-labelledby="filter-list gender-button" tabindex="0" role="button" aria-pressed="false" aria-expanded="true">
+                    Age
+                </span>
+                <ul id="gender-list" class="gender-list" tabindex="-1" role="listbox" aria-laballedby="filter-list">
+                    <li role="option">Male<i class="icon-close-fixed material-icons">close</i></li>
+                    <li role="option">Female</li>
+                </ul>
+            </li>
+            
+            
+        </ul>              
+    </section>
+        
     <main>
-        <section class="container">
-            <h1>Título</h1>
-            <div class="container-cards">
-                <div class="card">
-                    <figure class="card-avatar">
-                        <img src="https://uinames.com/api/photos/male/1.jpg" alt="" />
-                    </figure>
-                    <div class="card-body">
-                        <div class="card-info">
-                            <span><i class="material-icons"> person </i></span>
-                            <span id="gender"></span>
-                        </div>
-                        <div class="card-info">
-                            <span><i class="material-icons"> public </i></span>
-                            <span id="region"></span>
-                        </div>
-                        <div class="card-info">
-                            <span><i class="material-icons"> cake </i></span>
-                            <span id="birthday"></span>
-                        </div>
-                        <div class="card-info">
-                            <span><i class="material-icons"> email </i></span>
-                            <span id="email"></span>
-                        </div>
+        <div class="container-cards">
+            <div class="card">
+                <figure class="card-avatar">
+                    <img src="https://uinames.com/api/photos/male/1.jpg" alt="" />
+                </figure>
+                <div class="card-body">
+                    <div class="card-info">
+                        <span><i class="material-icons"> person </i></span>
+                        <span id="gender"></span>
+                    </div>
+                    <div class="card-info">
+                        <span><i class="material-icons"> public </i></span>
+                        <span id="region"></span>
+                    </div>
+                    <div class="card-info">
+                        <span><i class="material-icons"> cake </i></span>
+                        <span id="birthday"></span>
+                    </div>
+                    <div class="card-info">
+                        <span><i class="material-icons"> email </i></span>
+                        <span id="email"></span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 </body>
 </html>
